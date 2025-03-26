@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfProject3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:hw="http://schemas.hpod9.com/haley/wpf"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfProject3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="50" Margin="0,0,0,0" Fill="#330036" VerticalAlignment="Top" Width="800"/>
+        <Label HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Content="Maak een keuze" Foreground="#C6CCB2" FontFamily="Arial" FontSize="28"></Label>
+        <Rectangle HorizontalAlignment="Left" Height="385" Margin="0,50,0,0"  Fill="#093824" VerticalAlignment="Top" Width="400"/>
+        <Button x:Name="btnStudent" Content="STUDENTEN" HorizontalAlignment="Left" Margin="88,220,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36" Foreground="#C6CCB2" Background="#FF093824" FontWeight="Bold" BorderBrush="{x:Null}"/>
+        <hw:PlainImage hw:Icon.Default="{StaticResource bs_mortarboard_fill}" Height="60" Width="60" Margin="-90,50,0,0" hw:Icon.DefaultColor="#C6CCB2" />
+        <Rectangle HorizontalAlignment="Left" Height="385" Margin="400,50,0,0" Fill="#BF4E30" VerticalAlignment="Top" Width="400"/>
+        <Button x:Name="btnCompany" Content="BEDRIJVEN" HorizontalAlignment="Left" Margin="497,220,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36" Foreground="#C6CCB2" Background="#BF4E30" FontWeight="Bold" BorderBrush="{x:Null}"/>
+        <hw:PlainImage hw:Icon.Default="{StaticResource bs_building}" Height="60" Width="60" Margin="700,50,0,0" hw:Icon.DefaultColor="#C6CCB2"/>
+
+
+    </Grid>
+</Window>
