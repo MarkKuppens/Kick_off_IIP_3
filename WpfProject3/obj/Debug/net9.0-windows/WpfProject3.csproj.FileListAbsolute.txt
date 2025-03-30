@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 C:\Users\somer\OneDrive - ODISEE\School\Github\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\WpfProject3.exe
 C:\Users\somer\OneDrive - ODISEE\School\Github\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\WpfProject3.deps.json
 C:\Users\somer\OneDrive - ODISEE\School\Github\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\WpfProject3.runtimeconfig.json
@@ -57,3 +58,63 @@ C:\Users\somer\OneDrive - ODISEE\School\Github\Kick_off_IIP_3\WpfProject3\obj\De
 C:\Users\somer\OneDrive - ODISEE\School\Github\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.pdb
 C:\Users\somer\OneDrive - ODISEE\School\Github\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.genruntimeconfig.cache
 C:\Users\somer\OneDrive - ODISEE\School\Github\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\ref\WpfProject3.dll
+=======
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\WpfProject3.exe
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\WpfProject3.deps.json
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\WpfProject3.runtimeconfig.json
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\WpfProject3.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\WpfProject3.pdb
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Haley.Abstractions.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Haley.Extensions.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Haley.Helpers.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Haley.IOC.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Haley.MVVM.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Haley.WPF.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Haley.WPF.IconsPack.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Identity.Client.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\System.CodeDom.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\System.Drawing.Common.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\System.Private.Windows.Core.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\System.Management.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\System.Security.Cryptography.Xml.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Management.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.csproj.AssemblyReference.cache
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3_MarkupCompile.cache
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3_MarkupCompile.lref
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\App.baml
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.g.resources
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.AssemblyInfoInputs.cache
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.AssemblyInfo.cs
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.csproj.CoreCompileInputs.cache
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.sourcelink.json
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProje.5F104BE2.Up2Date
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\refint\WpfProject3.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.pdb
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.genruntimeconfig.cache
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\ref\WpfProject3.dll
+>>>>>>> Stashed changes

@@ -8,15 +8,97 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Rectangle HorizontalAlignment="Left" Height="50" Margin="0,0,0,0" Fill="#330036" VerticalAlignment="Top" Width="800"/>
-        <Label HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Content="Maak een keuze" Foreground="#C6CCB2" FontFamily="Arial" FontSize="28"></Label>
-        <Rectangle HorizontalAlignment="Left" Height="385" Margin="0,50,0,0"  Fill="#093824" VerticalAlignment="Top" Width="400"/>
-        <Button x:Name="btnStudent" Content="STUDENTEN" HorizontalAlignment="Left" Margin="88,220,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36" Foreground="#C6CCB2" Background="#FF093824" FontWeight="Bold" BorderBrush="{x:Null}"/>
-        <hw:PlainImage hw:Icon.Default="{StaticResource bs_mortarboard_fill}" Height="60" Width="60" Margin="-90,50,0,0" hw:Icon.DefaultColor="#C6CCB2" />
-        <Rectangle HorizontalAlignment="Left" Height="385" Margin="400,50,0,0" Fill="#BF4E30" VerticalAlignment="Top" Width="400"/>
-        <Button x:Name="btnCompany" Content="BEDRIJVEN" HorizontalAlignment="Left" Margin="497,220,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36" Foreground="#C6CCB2" Background="#BF4E30" FontWeight="Bold" BorderBrush="{x:Null}"/>
-        <hw:PlainImage hw:Icon.Default="{StaticResource bs_building}" Height="60" Width="60" Margin="700,50,0,0" hw:Icon.DefaultColor="#C6CCB2"/>
+        <Grid x:Name="Grid1" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="800" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Rectangle HorizontalAlignment="Center" Height="50" Fill="#330036" VerticalAlignment="Top" Width="800" Grid.Column="1"/>
+            <Label HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Content="Maak een keuze" Foreground="#C6CCB2" FontFamily="Arial" FontSize="28" Grid.Column="1"></Label>
+            <Rectangle HorizontalAlignment="Left" Height="385" Margin="0,50,0,0"  Fill="#093824" VerticalAlignment="Top" Width="400" Grid.ColumnSpan="2"/>
+            <Button x:Name="btnStudent" Content="STUDENTEN" HorizontalAlignment="Left" Margin="88,220,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36" Foreground="#C6CCB2" Background="#FF093824" FontWeight="Bold" BorderBrush="{x:Null}" Grid.ColumnSpan="2"/>
+            <hw:PlainImage hw:Icon.Default="{StaticResource bs_mortarboard_fill}" Height="60" Width="60" Margin="325,212,415,162" hw:Icon.DefaultColor="#C6CCB2" Grid.ColumnSpan="2" />
+            <Rectangle HorizontalAlignment="Left" Height="385" Margin="400,50,0,0" Fill="#BF4E30" VerticalAlignment="Top" Width="400" Grid.ColumnSpan="2"/>
+            <Button x:Name="btnCompany" Content="BEDRIJVEN" HorizontalAlignment="Left" Margin="497,220,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36" Foreground="#C6CCB2" Background="#BF4E30" FontWeight="Bold" BorderBrush="{x:Null}" Grid.ColumnSpan="2"/>
+            <hw:PlainImage hw:Icon.Default="{StaticResource bs_building}" Height="60" Width="60" Margin="720,212,20,162" hw:Icon.DefaultColor="#C6CCB2" Grid.ColumnSpan="2"/>
+        </Grid>
+        <Grid x:Name="Grid2" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="800">
+            <Rectangle HorizontalAlignment="Center" Height="50" Fill="#330036" VerticalAlignment="Top" Width="800" Grid.Column="1"/>
+            <Label HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Content="Voor welke cursus wilt u inschrijven?" Foreground="#C6CCB2" FontFamily="Arial" FontSize="28" Grid.Column="1"></Label>
+            <Rectangle HorizontalAlignment="Left" Height="385" Margin="0,50,0,0"  Fill="#093824" VerticalAlignment="Top" Width="800" Grid.ColumnSpan="2"/>
+            <RadioButton x:Name="rbnCursus1" Content="Cursus 1" HorizontalAlignment="Left" Margin="100,110,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="20"/>
+            <Label x:Name="lblCursus1" Content="Label" HorizontalAlignment="Left" Margin="235,105,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="18" />
+            <RadioButton x:Name="rbnCursus2" Content="Cursus 2" HorizontalAlignment="Left" Margin="100,150,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="20"/>
+            <Label x:Name="lblCursus2" Content="Label" HorizontalAlignment="Left" Margin="235,145,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="18" />
+            <RadioButton x:Name="rbnCursus3" Content="Cursus 3" HorizontalAlignment="Left" Margin="100,190,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="20"/>
+            <Label x:Name="lblCursus3" Content="Label" HorizontalAlignment="Left" Margin="235,185,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="18" />
+            <RadioButton x:Name="rbnCursus4" Content="Cursus 4" HorizontalAlignment="Left" Margin="100,230,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="20"/>
+            <Label x:Name="lblCursus4" Content="Label" HorizontalAlignment="Left" Margin="235,225,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="18" />
+            <RadioButton x:Name="rbnCursus5" Content="Cursus 5" HorizontalAlignment="Left" Margin="100,270,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="20"/>
+            <Label x:Name="lblCursus5" Content="Label" HorizontalAlignment="Left" Margin="235,265,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="18" />
+            <RadioButton x:Name="rbnCursus6" Content="Cursus 6" HorizontalAlignment="Left" Margin="100,310,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="20"/>
+            <Label x:Name="lblCursus6" Content="Label" HorizontalAlignment="Left" Margin="235,305,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="18" />
+            <Button x:Name="btnVerder" Content="Verder" HorizontalAlignment="Left" Margin="650,375,0,0" VerticalAlignment="Top" Width="50" />
+        </Grid>
+        <Grid x:Name="Grid3" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="800">
+            <Rectangle HorizontalAlignment="Center" Height="50" Fill="#330036" VerticalAlignment="Top" Width="800" Grid.Column="1"/>
+            <Label HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Content="Vul onderstaand formulier in" Foreground="#C6CCB2" FontFamily="Arial" FontSize="28" Grid.Column="1"></Label>
+            <Rectangle HorizontalAlignment="Left" Height="385" Margin="0,50,0,0"  Fill="#093824" VerticalAlignment="Top" Width="800" Grid.ColumnSpan="2"/>
+            <Label x:Name="lblNaam" Content="Naam *" HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtVoornaam" HorizontalAlignment="Left" Margin="50,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+            <TextBox x:Name="txtAchternaam" HorizontalAlignment="Left" Margin="300,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300"/>
+            <Label x:Name="lblVoornaam" Content="Voornaam" HorizontalAlignment="Left" Margin="50,115,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
+            <Label x:Name="lblAchternaam" Content="Achternaam" HorizontalAlignment="Left" Margin="300,115,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
+            <Label x:Name="lblAdres" Content="Adres *" HorizontalAlignment="Left" Margin="50,140,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtStraat" HorizontalAlignment="Left" Margin="50,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
+            <Label x:Name="lblStraat" Content="Straat" HorizontalAlignment="Left" Margin="50,185,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
+            <TextBox x:Name="txtHuisnr" HorizontalAlignment="Left" Margin="520,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80"/>
+            <TextBox x:Name="txtToevoeging" HorizontalAlignment="Left" Margin="650,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80"/>
+            <Label x:Name="lblHuisnr" Content="Huinr" HorizontalAlignment="Left" Margin="520,185,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
+            <Label x:Name="lblToevoeging" Content="Toevoeging" HorizontalAlignment="Left" Margin="650,185,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
+            <Label x:Name="lblPostcode" Content="Postcode *" HorizontalAlignment="Left" Margin="50,210,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtPostcode" HorizontalAlignment="Left" Margin="50,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+            <Label x:Name="lblPlaats" Content="Woonplaats *" HorizontalAlignment="Left" Margin="210,210,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtPlaats" HorizontalAlignment="Left" Margin="210,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300"/>
+            <Label x:Name="lblGsm" Content="Gsm *" HorizontalAlignment="Left" Margin="50,255,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtGsm" HorizontalAlignment="Left" Margin="50,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
+            <Label x:Name="lblEmail" Content="Email *" HorizontalAlignment="Left" Margin="50,300,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="50,325,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
+            <Label x:Name="lblRijks" Content="Rijksregisternummer *" HorizontalAlignment="Left" Margin="50,345,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtRijks" HorizontalAlignment="Left" Margin="50,370,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
+            <Button x:Name="btnSubmit1" Content="Verzenden" HorizontalAlignment="Left" Margin="200,400,0,0" VerticalAlignment="Top" Width="100"/>
+            <Button x:Name="btnClear1" Content="Wissen" HorizontalAlignment="Left" Margin="500,400,0,0" VerticalAlignment="Top" Width="100"/>
 
+        </Grid>
+        <Grid x:Name="Grid4" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="800">
+            <Rectangle HorizontalAlignment="Center" Height="50" Fill="#330036" VerticalAlignment="Top" Width="800" Grid.Column="1"/>
+            <Label HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Content="Vul uw bedrijfsgegevens in" Foreground="#C6CCB2" FontFamily="Arial" FontSize="28" Grid.Column="1"></Label>
+            <Rectangle HorizontalAlignment="Left" Height="385" Margin="0,50,0,0"  Fill="#BF4E30" VerticalAlignment="Top" Width="800" Grid.ColumnSpan="2"/>
+            <Label x:Name="lblBedrijfsNaam" Content="Bedrijfsnaam *" HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtBedrijfsNaam" HorizontalAlignment="Left" Margin="50,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
+            <Label x:Name="lblRechtsVorm" Content="Rechtsvorm *" HorizontalAlignment="Left" Margin="550,70,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtRechtsVorm" HorizontalAlignment="Left" Margin="550,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+            <Label x:Name="lblBedrijfAdres" Content="Adres *" HorizontalAlignment="Left" Margin="50,140,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtBedrijfStraat" HorizontalAlignment="Left" Margin="50,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
+            <Label x:Name="lblBedrijfStraat" Content="Straat" HorizontalAlignment="Left" Margin="50,185,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
+            <TextBox x:Name="txtBedrijfHuisnr" HorizontalAlignment="Left" Margin="520,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80"/>
+            <TextBox x:Name="txtBedrijfToevoeging" HorizontalAlignment="Left" Margin="650,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80"/>
+            <Label x:Name="lblBedrijfHuisnr" Content="Huinr" HorizontalAlignment="Left" Margin="520,185,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
+            <Label x:Name="lblBedrijfToevoeging" Content="Toevoeging" HorizontalAlignment="Left" Margin="650,185,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
+            <Label x:Name="lblBedrijfPostcode" Content="Postcode *" HorizontalAlignment="Left" Margin="50,210,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtBedrijfPostcode" HorizontalAlignment="Left" Margin="50,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+            <Label x:Name="lblBedrijfPlaats" Content="Plaats *" HorizontalAlignment="Left" Margin="210,210,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtBedrijfPlaats" HorizontalAlignment="Left" Margin="210,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300"/>
+            <Label x:Name="lblTelefoon" Content="Gsm *" HorizontalAlignment="Left" Margin="50,255,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtTelefoon" HorizontalAlignment="Left" Margin="50,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
+            <Label x:Name="lblBedrijfEmail" Content="Email *" HorizontalAlignment="Left" Margin="50,300,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtBedrijfEmail" HorizontalAlignment="Left" Margin="50,325,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
+            <Label x:Name="lblKBO" Content="KBO-nummer *" HorizontalAlignment="Left" Margin="550,255,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="txtKBO" HorizontalAlignment="Left" Margin="550,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+            <Button x:Name="btnSubmit2" Content="Verzenden" HorizontalAlignment="Left" Margin="200,400,0,0" VerticalAlignment="Top" Width="100"/>
+            <Button x:Name="btnClear2" Content="Wissen" HorizontalAlignment="Left" Margin="500,400,0,0" VerticalAlignment="Top" Width="100"/>
+        </Grid>
 
     </Grid>
+    
 </Window>
