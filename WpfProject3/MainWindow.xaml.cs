@@ -20,5 +20,17 @@ namespace WpfProject3
         {
             InitializeComponent();
         }
+
+        private void BtnStudent_Click(object sender, RoutedEventArgs e)
+        {
+            Grid1.Visibility = Visibility.Collapsed;
+            Grid2.Visibility = Visibility.Visible;
+        }
+
+        private void BtnCompany_Click(object sender, RoutedEventArgs e)
+        {
+            Grid1.Visibility = Visibility.Collapsed;
+            Grid4.Visibility = Visibility.Visible;
+        }
     }
 }

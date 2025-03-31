@@ -47,11 +47,7 @@ namespace WpfProject3 {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-<<<<<<< Updated upstream
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.1.0")]
-=======
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.3.0")]
->>>>>>> Stashed changes
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
@@ -77,11 +73,7 @@ namespace WpfProject3 {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-<<<<<<< Updated upstream
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.1.0")]
-=======
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "9.0.3.0")]
->>>>>>> Stashed changes
         public static void Main() {
             WpfProject3.App app = new WpfProject3.App();
             app.InitializeComponent();

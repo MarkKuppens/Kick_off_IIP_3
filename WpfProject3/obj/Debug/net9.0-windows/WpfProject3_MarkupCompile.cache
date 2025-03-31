@@ -4,28 +4,16 @@
 winexe
 C#
 .cs
-<<<<<<< Updated upstream
-C:\Users\somer\OneDrive - ODISEE\School\Github\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\
-=======
 C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\
->>>>>>> Stashed changes
 WpfProject3
 none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP
-<<<<<<< Updated upstream
-C:\Users\somer\OneDrive - ODISEE\School\Github\Kick_off_IIP_3\WpfProject3\App.xaml
-11407045341
-
-41738185795
-227-445125026
-=======
 C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\App.xaml
 11407045341
 
 41738185795
 227-2005792024
->>>>>>> Stashed changes
 MainWindow.xaml;
 
 False

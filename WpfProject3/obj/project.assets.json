@@ -1737,23 +1737,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\somer\\.nuget\\packages\\": {},
+    "C:\\Users\\markk\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\somer\\OneDrive - ODISEE\\School\\Github\\Kick_off_IIP_3\\WpfProject3\\WpfProject3.csproj",
+      "projectUniqueName": "C:\\Users\\markk\\Documents\\Odisee\\Kickoff IIP\\Kick_off_IIP_3\\WpfProject3\\WpfProject3.csproj",
       "projectName": "WpfProject3",
-      "projectPath": "C:\\Users\\somer\\OneDrive - ODISEE\\School\\Github\\Kick_off_IIP_3\\WpfProject3\\WpfProject3.csproj",
-      "packagesPath": "C:\\Users\\somer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\somer\\OneDrive - ODISEE\\School\\Github\\Kick_off_IIP_3\\WpfProject3\\obj\\",
+      "projectPath": "C:\\Users\\markk\\Documents\\Odisee\\Kickoff IIP\\Kick_off_IIP_3\\WpfProject3\\WpfProject3.csproj",
+      "packagesPath": "C:\\Users\\markk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\markk\\Documents\\Odisee\\Kickoff IIP\\Kick_off_IIP_3\\WpfProject3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\somer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\markk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1780,7 +1780,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0-windows7.0": {
@@ -1820,7 +1820,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
