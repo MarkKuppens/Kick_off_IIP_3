@@ -21,6 +21,7 @@ namespace WpfProject3
             InitializeComponent();
         }
 
+        // Buttons 
         private void BtnStudent_Click(object sender, RoutedEventArgs e)
         {
             Grid1.Visibility = Visibility.Collapsed;
@@ -43,6 +44,11 @@ namespace WpfProject3
         {
             Grid4.Visibility = Visibility.Collapsed;
             Grid1.Visibility = Visibility.Visible;
+        }
+
+        private void BtnVerder_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
