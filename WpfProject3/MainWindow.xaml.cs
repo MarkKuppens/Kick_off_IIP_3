@@ -32,5 +32,17 @@ namespace WpfProject3
             Grid1.Visibility = Visibility.Collapsed;
             Grid4.Visibility = Visibility.Visible;
         }
+
+        private void BtnTerug_Click(object sender, RoutedEventArgs e)
+        {
+            Grid2.Visibility = Visibility.Collapsed;
+            Grid1.Visibility = Visibility.Visible;
+        }
+
+        private void BtnTerug2_Click(object sender, RoutedEventArgs e)
+        {
+            Grid4.Visibility = Visibility.Collapsed;
+            Grid1.Visibility = Visibility.Visible;
+        }
     }
 }

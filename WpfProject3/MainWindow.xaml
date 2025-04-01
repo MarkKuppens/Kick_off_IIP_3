@@ -32,6 +32,7 @@
             <Label x:Name="lblCursus5" Content="Label" HorizontalAlignment="Left" Margin="235,265,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="18" />
             <RadioButton x:Name="rbnCursus6" Content="Cursus 6" HorizontalAlignment="Left" Margin="100,310,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="20"/>
             <Label x:Name="lblCursus6" Content="Label" HorizontalAlignment="Left" Margin="235,305,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="18" />
+            <Button x:Name="btnTerug" Content="Terug" HorizontalAlignment="Left" Margin="550,375,0,0" VerticalAlignment="Top" Width="50" Click="btnTerug_Click" />
             <Button x:Name="btnVerder" Content="Verder" HorizontalAlignment="Left" Margin="650,375,0,0" VerticalAlignment="Top" Width="50" />
         </Grid>
         <Grid x:Name="Grid3" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="800" Visibility="Hidden">
@@ -89,8 +90,9 @@
             <TextBox x:Name="txtBedrijfEmail" HorizontalAlignment="Left" Margin="50,325,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
             <Label x:Name="lblKBO" Content="KBO-nummer *" HorizontalAlignment="Left" Margin="550,255,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
             <TextBox x:Name="txtKBO" HorizontalAlignment="Left" Margin="550,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
-            <Button x:Name="btnSubmit2" Content="Verzenden" HorizontalAlignment="Left" Margin="200,400,0,0" VerticalAlignment="Top" Width="100"/>
-            <Button x:Name="btnClear2" Content="Wissen" HorizontalAlignment="Left" Margin="500,400,0,0" VerticalAlignment="Top" Width="100"/>
+            <Button x:Name="btnSubmit2" Content="Verzenden" HorizontalAlignment="Left" Margin="475,400,0,0" VerticalAlignment="Top" Width="100"/>
+            <Button x:Name="btnClear2" Content="Wissen" HorizontalAlignment="Left" Margin="600,400,0,0" VerticalAlignment="Top" Width="100"/>
+            <Button x:Name="btnTerug2" Content="Terug" HorizontalAlignment="Left" Margin="725,400,0,0" VerticalAlignment="Top" Width="50" Click="btnTerug2_Click" />
         </Grid>
 
     </Grid>
