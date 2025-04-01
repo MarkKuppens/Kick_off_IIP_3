@@ -6,20 +6,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfProject3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="900">
     <Grid>
         <Grid x:Name="Grid1" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="800" >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0*"/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
             <Rectangle HorizontalAlignment="Center" Height="50" Fill="#330036" VerticalAlignment="Top" Width="800" Grid.Column="1"/>
             <Label HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Content="Maak een keuze" Foreground="#C6CCB2" FontFamily="Arial" FontSize="28" Grid.Column="1"></Label>
-            <Rectangle HorizontalAlignment="Left" Height="385" Margin="0,50,0,0"  Fill="#093824" VerticalAlignment="Top" Width="400" Grid.ColumnSpan="2"/>
-            <Button x:Name="btnStudent" Content="STUDENTEN" HorizontalAlignment="Left" Margin="88,220,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36" Foreground="#C6CCB2" Background="#FF093824" FontWeight="Bold" BorderBrush="{x:Null}" Grid.ColumnSpan="2" Click="BtnStudent_Click"/>
+            <Button x:Name="btnStudent" Content="STUDENTEN" Height="385" Width="400" HorizontalAlignment="left" Margin="0,50,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36" Foreground="#C6CCB2" Background="#FF093824" FontWeight="Bold" BorderBrush="{x:Null}" Grid.ColumnSpan="2" Click="BtnStudent_Click"/>
             <hw:PlainImage hw:Icon.Default="{StaticResource bs_mortarboard_fill}" Height="60" Width="60" Margin="325,212,415,162" hw:Icon.DefaultColor="#C6CCB2" Grid.ColumnSpan="2" />
-            <Rectangle HorizontalAlignment="Left" Height="385" Margin="400,50,0,0" Fill="#BF4E30" VerticalAlignment="Top" Width="400" Grid.ColumnSpan="2"/>
-            <Button x:Name="btnCompany" Content="BEDRIJVEN" HorizontalAlignment="Left" Margin="497,220,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36" Foreground="#C6CCB2" Background="#BF4E30" FontWeight="Bold" BorderBrush="{x:Null}" Grid.ColumnSpan="2" Click="BtnCompany_Click"/>
+            <Button x:Name="btnCompany" Content="BEDRIJVEN" Height="385" Width="400" HorizontalAlignment="Left" Margin="400,50,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36" Foreground="#C6CCB2" Background="#BF4E30" FontWeight="Bold" BorderBrush="{x:Null}" Grid.ColumnSpan="2" Click="BtnCompany_Click"/>
             <hw:PlainImage hw:Icon.Default="{StaticResource bs_building}" Height="60" Width="60" Margin="720,212,20,162" hw:Icon.DefaultColor="#C6CCB2" Grid.ColumnSpan="2"/>
         </Grid>
         <Grid x:Name="Grid2" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="800" Visibility="Hidden">
