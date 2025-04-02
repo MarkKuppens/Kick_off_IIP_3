@@ -10,6 +10,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Newtonsoft.Json;
+using static WpfProject3.MainWindow;
 
 namespace WpfProject3
 {
@@ -111,6 +112,11 @@ namespace WpfProject3
                 return;
             }
 
+            // Get the selected course from the application properties
+            string selectedCursus = Application.Current.Properties.Contains("SelectedCursus")
+            ? Application.Current.Properties["SelectedCursus"].ToString() :
+            "Geen cursus geselecteerd"; // Fallback if no course is selected
+
             // Controleer of de postcode een geldig getal van 4 cijfers is
             if (!int.TryParse(TxtPostcode.Text, out int postcode) || TxtPostcode.Text.Length != 4)
             {
@@ -134,8 +140,50 @@ namespace WpfProject3
 
             // Als alle validaties slagen, kun je de gegevens verwerken
             MessageBox.Show("Formulier succesvol verzonden!", "Succes", MessageBoxButton.OK, MessageBoxImage.Information);
+
+            // Create an instance of Student
+            Student student = new Student
+            {
+                Voornaam = TxtVoornaam.Text,
+                Achternaam = TxtAchternaam.Text,
+                Straat = TxtStraat.Text,
+                Huisnr = TxtHuisnr.Text,
+                Toevoeging = TxtToevoeging.Text,
+                Postcode = TxtPostcode.Text,
+                Plaats = TxtPlaats.Text,
+                Gsm = TxtGsm.Text,
+                Email = TxtEmail.Text,
+                Rijks = TxtRijks.Text,
+                Cursus = selectedCursus
+            };
+
+            // Convert the Student object to JSON
+            string json = JsonConvert.SerializeObject(student, Formatting.Indented);
+
+            // Generate the file name dynamically
+            string fileName = $"{student.Voornaam}_{student.Achternaam}.json";
+            string filePath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), fileName);
+
+            // Schrijf de JSON naar een bestand
+            File.WriteAllText(filePath, json);
+            MessageBox.Show($"Formulier succesvol verzonden en gegevens opgeslagen in {fileName} !", "Succes", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+        public class Student
+        {
+            public string Voornaam { get; set; }
+            public string Achternaam { get; set; }
+            public string Straat { get; set; }
+            public string Huisnr { get; set; }
+            public string Toevoeging { get; set; }
+            public string Postcode { get; set; }
+            public string Plaats { get; set; }
+            public string Gsm { get; set; }
+            public string Email { get; set; }
+            public string Rijks { get; set; }
+            public string Cursus { get; set; }
         }
 
+        // Validatie emailadres
         private bool IsValidEmail(string email)
         {
             try

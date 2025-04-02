@@ -30,7 +30,8 @@
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-01T19:54:37.165Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -40,7 +41,7 @@
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\markk\\Documents\\Odisee\\Kickoff IIP\\Kick_off_IIP_3\\WpfProject3\\MainWindow.xaml.cs*",
               "RelativeToolTip": "MainWindow.xaml.cs*",
-              "ViewState": "AgIAAMEAAAAAAAAAAAAuwOUAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAswHQAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T19:54:46.648Z",
               "IsPinned": true,
