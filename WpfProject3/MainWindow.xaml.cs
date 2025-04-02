@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.IO;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -203,18 +204,30 @@ namespace WpfProject3
             };
 
             // Converteer het Bedrijf object naar JSON
-            // string json = JsonConvert.SerializeObject(bedrijf, Formatting.Indented);
+            string json = JsonConvert.SerializeObject(bedrijf, Formatting.Indented);
 
             // Toon de JSON-string in een MessageBox om te testen
-            // MessageBox.Show(json, "Bedrijfsgegevens", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show(json, "Bedrijfsgegevens", MessageBoxButton.OK, MessageBoxImage.Information);
 
             // Maak de bestandsnaam dynamisch op basis van bedrijfsnaam
-            // string fileName = $"{bedrijf.BedrijfsNaam}.json";
-            // string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), fileName);
+            string fileName = $"{bedrijf.BedrijfsNaam}.json";
+            string filePath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), fileName);
 
             // Schrijf de JSON naar een bestand
-            // File.WriteAllText(filePath, json);
-            MessageBox.Show($"Formulier succesvol verzonden en gegevens opgeslagen in !", "Succes", MessageBoxButton.OK, MessageBoxImage.Information);
+            File.WriteAllText(filePath, json);
+            MessageBox.Show($"Formulier succesvol verzonden en gegevens opgeslagen in {fileName} !", "Succes", MessageBoxButton.OK, MessageBoxImage.Information);
+
+            // Maak het scherm leeg na het verzenden
+            TxtBedrijfsNaam.Clear();
+            TxtRechtsVorm.Clear();
+            TxtBedrijfStraat.Clear();
+            TxtBedrijfHuisnr.Clear();
+            TxtBedrijfToevoeging.Clear();
+            TxtBedrijfPostcode.Clear();
+            TxtBedrijfPlaats.Clear();
+            TxtTelefoon.Clear();
+            TxtBedrijfEmail.Clear();
+            TxtKBO.Clear();
         }
 
         public class Bedrijf
