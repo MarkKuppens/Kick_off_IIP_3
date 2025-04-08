@@ -6,36 +6,100 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfProject3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="900">
+        Background="AliceBlue"
+        Height="500" Width="900">
+
     <Grid>
-        <Grid x:Name="Grid1" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="800" >
-            <Rectangle HorizontalAlignment="Center" Height="50" Fill="#330036" VerticalAlignment="Top" Width="800" Grid.Column="1"/>
-            <Label x:Name="LblKeuze" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Content="Maak een keuze" Foreground="#C6CCB2" FontFamily="Arial" FontSize="28" Grid.Column="1"></Label>
-            <Button x:Name="BtnStudent" Content="STUDENTEN" Height="385" Width="400" HorizontalAlignment="left" Margin="0,50,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36" Foreground="#C6CCB2" Background="#FF093824" FontWeight="Bold" BorderBrush="{x:Null}" Grid.ColumnSpan="2" Click="BtnStudent_Click"/>
-            <hw:PlainImage hw:Icon.Default="{StaticResource bs_mortarboard_fill}" Height="60" Width="60" Margin="325,212,415,162" hw:Icon.DefaultColor="#C6CCB2" Grid.ColumnSpan="2" />
-            <Button x:Name="BtnCompany" Content="BEDRIJVEN" Height="385" Width="400" HorizontalAlignment="Left" Margin="400,50,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="36" Foreground="#C6CCB2" Background="#BF4E30" FontWeight="Bold" BorderBrush="{x:Null}" Grid.ColumnSpan="2" Click="BtnCompany_Click"/>
-            <hw:PlainImage hw:Icon.Default="{StaticResource bs_building}" Height="60" Width="60" Margin="720,212,20,162" hw:Icon.DefaultColor="#C6CCB2" Grid.ColumnSpan="2"/>
+        <Grid x:Name="Grid1" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="500" Width="900" Visibility="Visible">
+            <Rectangle HorizontalAlignment="Center" Height="100" Margin="0,27,0,0" VerticalAlignment="Top" Width="698" RadiusY="50" RadiusX="50" >
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="#FFA0E8AF" Opacity="0.4"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label x:Name="LblKeuze" Content="Wie ben jij?" HorizontalAlignment="Center" Margin="0,39,0,0" VerticalAlignment="Top" Height="76" Width="288" FontSize="48" FontFamily="Bookman Old Style"/>
+            <Button x:Name="BtnStudent" Content="STUDENT" HorizontalAlignment="Left" Margin="101,168,0,0" VerticalAlignment="Top" Height="205" Width="205" FontSize="36" BorderBrush="{x:Null}" FontFamily="Bookman Old Style" Click="BtnStudent_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="#FFA0E8AF" Opacity="0.4"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="50"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="BtnCompany" Content="Bedrijf" HorizontalAlignment="Left" Margin="560,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="205" Width="205" FontSize="36" BorderBrush="{x:Null}" FontFamily="Bookman Old Style" Click="BtnCompany_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="#FFA0E8AF" Opacity="0.4"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="50"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <hw:PlainImage hw:Icon.Default="{StaticResource bs_building}" Height="60" Width="60" Margin="630,308,210,132" hw:Icon.DefaultColor="#C6CCB2"/>
+            <hw:PlainImage hw:Icon.Default="{StaticResource bs_mortarboard_fill}" Height="60" Width="60" Margin="171,308,669,132" hw:Icon.DefaultColor="#C6CCB2" RenderTransformOrigin="0.387,0.587" />
+            <Label x:Name="LblSponsors" Content="Onze Sponsors" HorizontalAlignment="Left" Margin="101,378,0,0" VerticalAlignment="Top" Height="34" Width="136" FontFamily="Bookman Old Style"/>
+            <Image x:Name="imgSponsor1" HorizontalAlignment="Left" Height="40" Margin="127,412,0,0" VerticalAlignment="Top" Width="40"/>
+            <Image x:Name="imgSponsor2" HorizontalAlignment="Left" Height="40" Margin="201,412,0,0" VerticalAlignment="Top" Width="40" RenderTransformOrigin="0.735,0.54"/>
+            <Image x:Name="imgSponsor3" HorizontalAlignment="Left" Height="40" Margin="275,412,0,0" VerticalAlignment="Top" Width="40"/>
+            <Image x:Name="imgSponsor4" HorizontalAlignment="Left" Height="40" Margin="345,412,0,0" VerticalAlignment="Top" Width="40"/>
+            <Image x:Name="imgSponsor5" HorizontalAlignment="Left" Height="40" Margin="420,412,0,0" VerticalAlignment="Top" Width="40"/>
+            <Button x:Name="BtnStop" Content="Stoppen" HorizontalAlignment="Left" Margin="754,412,0,0" VerticalAlignment="Top" Height="28" Width="74" BorderBrush="{x:Null}" FontFamily="Bookman Old Style" Click="BtnStop_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="#FFA0E8AF" Opacity="0.4"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
         </Grid>
-        <Grid x:Name="Grid2" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="800" Visibility="Hidden">
-            <Rectangle HorizontalAlignment="Center" Height="50" Fill="#330036" VerticalAlignment="Top" Width="800" Grid.Column="1"/>
-            <Label HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Content="Voor welke cursus wilt u inschrijven?" Foreground="#C6CCB2" FontFamily="Arial" FontSize="28" Grid.Column="1"></Label>
-            <Rectangle HorizontalAlignment="Left" Height="385" Margin="0,50,0,0"  Fill="#093824" VerticalAlignment="Top" Width="800" Grid.ColumnSpan="2"/>
-            <RadioButton x:Name="RbnCursus1" Content="Cursus 1" HorizontalAlignment="Left" Margin="100,110,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="20" IsChecked="True"/>
-            <Label x:Name="LblCursus1" Content="Label" HorizontalAlignment="Left" Margin="235,105,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="18" />
-            <RadioButton x:Name="RbnCursus2" Content="Cursus 2" HorizontalAlignment="Left" Margin="100,150,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="20"/>
-            <Label x:Name="LblCursus2" Content="Label" HorizontalAlignment="Left" Margin="235,145,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="18" />
-            <RadioButton x:Name="RbnCursus3" Content="Cursus 3" HorizontalAlignment="Left" Margin="100,190,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="20"/>
-            <Label x:Name="LblCursus3" Content="Label" HorizontalAlignment="Left" Margin="235,185,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="18" />
-            <RadioButton x:Name="RbnCursus4" Content="Cursus 4" HorizontalAlignment="Left" Margin="100,230,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="20"/>
-            <Label x:Name="LblCursus4" Content="Label" HorizontalAlignment="Left" Margin="235,225,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="18" />
-            <RadioButton x:Name="RbnCursus5" Content="Cursus 5" HorizontalAlignment="Left" Margin="100,270,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="20"/>
-            <Label x:Name="LblCursus5" Content="Label" HorizontalAlignment="Left" Margin="235,265,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="18" />
-            <RadioButton x:Name="RbnCursus6" Content="Cursus 6" HorizontalAlignment="Left" Margin="100,310,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="20"/>
-            <Label x:Name="LblCursus6" Content="Label" HorizontalAlignment="Left" Margin="235,305,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="18" />
-            <Button x:Name="BtnTerug" Content="Terug" HorizontalAlignment="Left" Margin="550,375,0,0" VerticalAlignment="Top" Width="50" Click="BtnTerug_Click" />
-            <Button x:Name="BtnVerder" Content="Verder" HorizontalAlignment="Left" Margin="650,375,0,0" VerticalAlignment="Top" Width="50" Click="BtnVerder_Click" />
+
+        <Grid x:Name="Grid2" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="500" Width="900" Visibility="Hidden">
+            <Rectangle HorizontalAlignment="Center" Height="100" Margin="0,10,0,0" VerticalAlignment="Top" Width="698" RadiusY="50" RadiusX="50" >
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="#FFA0E8AF" Opacity="0.4"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label x:Name="LblCursus" Content="Kies je cursus
+                   ?" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top" Height="76" Width="360" FontSize="48" FontFamily="Bookman Old Style"/>
+            <Button x:Name="BtnTerug" Content="Terug" HorizontalAlignment="Left" Margin="724,437,0,0" VerticalAlignment="Top" Width="75" Click="BtnTerug_Click" FontFamily="Bookman Old Style" Height="35" RenderTransformOrigin="0.152,0.93" FontSize="14" FontWeight="Bold" >
+                <Button.Background>
+                    <SolidColorBrush Color="#FFA0E8AF" Opacity="0.4"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="BtnVerder" Content="Verder" HorizontalAlignment="Left" Margin="817,437,0,0" VerticalAlignment="Top" Width="60" Click="BtnVerder_Click" Height="35" FontFamily="Bookman Old Style" FontSize="14" FontWeight="Bold" >
+                <Button.Background>
+                    <SolidColorBrush Color="#FFA0E8AF" Opacity="0.4"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Image x:Name="ImgCursus1" HorizontalAlignment="Left" Height="120" Margin="90,140,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.55,0.277" />
+            <Image x:Name="ImgCursus2" HorizontalAlignment="Left" Height="120" Margin="329,140,0,0" VerticalAlignment="Top" Width="120"/>
+            <Image x:Name="ImgCursus3" HorizontalAlignment="Left" Height="120" Margin="555,140,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.118,0.073"/>
+            <Image x:Name="ImgCursus4" HorizontalAlignment="Left" Height="120" Margin="90,297,0,0" VerticalAlignment="Top" Width="120"/>
+            <Image x:Name="ImgCursus5" HorizontalAlignment="Left" Height="120" Margin="330,297,0,0" VerticalAlignment="Top" Width="120"/>
+            <Image x:Name="ImgCursus6" HorizontalAlignment="Left" Height="120" Margin="555,297,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.355,0.532"/>
+            <RadioButton x:Name="RbnCursus1" Content="bandenmonteur" HorizontalAlignment="Left" Margin="90,270,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="RbnCursus2" Content="Boekhoudkundig Assistent" HorizontalAlignment="Left" Margin="330,270,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="RbnCursus3" Content="Brood- en banketbakker" HorizontalAlignment="Left" Margin="555,270,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="RbnCursus4" Content="Dakwerker" HorizontalAlignment="Left" Margin="90,430,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="RbnCursus5" Content="fietshersteller" HorizontalAlignment="Left" Margin="329,430,0,0" VerticalAlignment="Top"/>
+            <RadioButton x:Name="RbnCursus6" Content="Winkelverkoper" HorizontalAlignment="Left" Margin="555,430,0,0" VerticalAlignment="Top"/>
         </Grid>
-        <Grid x:Name="Grid3" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="800" Visibility="Hidden">
+
+        <Grid x:Name="Grid3" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="800" Visibility="Collapsed">
             <Rectangle HorizontalAlignment="Center" Height="50" Fill="#330036" VerticalAlignment="Top" Width="800" Grid.Column="1"/>
             <Label HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Content="Vul onderstaand formulier in" Foreground="#C6CCB2" FontFamily="Arial" FontSize="28" Grid.Column="1"></Label>
             <Rectangle HorizontalAlignment="Left" Height="385" Margin="0,50,0,0"  Fill="#093824" VerticalAlignment="Top" Width="800" Grid.ColumnSpan="2"/>

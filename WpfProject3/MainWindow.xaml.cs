@@ -341,5 +341,10 @@ namespace WpfProject3
             TxtBedrijfEmail.Clear();
             TxtKBO.Clear();
         }
+
+        private void BtnStop_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
