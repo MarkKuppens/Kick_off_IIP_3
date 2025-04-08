@@ -39,8 +39,8 @@ namespace WpfProject3
 
         private void BtnTerug_Click(object sender, RoutedEventArgs e)
         {
-            Grid2.Visibility = Visibility.Collapsed;
             Grid1.Visibility = Visibility.Visible;
+            Grid2.Visibility = Visibility.Hidden;
         }
 
         private void BtnTerug1_Click(object sender, RoutedEventArgs e)
@@ -94,6 +94,11 @@ namespace WpfProject3
             Grid3.Visibility = Visibility.Visible;
         }
 
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+            BtnVerder.IsEnabled = true; // Knop inschakelen zodra een cursus is gekozen
+        }
+
         // Verzenden knop studenten
         private void BtnSubmit1_Click(object sender, RoutedEventArgs e)
         {
@@ -112,10 +117,23 @@ namespace WpfProject3
                 return;
             }
 
-            // Get the selected course from the application properties
+            // Haal de geselecteerde cursus op uit de applicatie-instellingen
             string selectedCursus = Application.Current.Properties.Contains("SelectedCursus")
-            ? Application.Current.Properties["SelectedCursus"].ToString() :
-            "Geen cursus geselecteerd"; // Fallback if no course is selected
+                ? Application.Current.Properties["SelectedCursus"].ToString()
+                : null; // Null als er geen cursus is geselecteerd
+
+            // Controleer of er een cursus is geselecteerd
+            bool isCursusGeselecteerd = !string.IsNullOrEmpty(selectedCursus);
+
+            // Indien geen cursus geselecteerd, toon melding
+            if (!isCursusGeselecteerd)
+            {
+                selectedCursus = "Er is geen cursus geselecteerd, Kies een cursus a.u.b.";
+                MessageBox.Show(selectedCursus, "Informatie", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+
+            // De knop uitschakelen als er geen cursus is
+            BtnVerder.IsEnabled = isCursusGeselecteerd;
 
             // Controleer of de postcode een geldig getal van 4 cijfers is
             if (!int.TryParse(TxtPostcode.Text, out int postcode) || TxtPostcode.Text.Length != 4)
