@@ -7,19 +7,30 @@
         xmlns:local="clr-namespace:WpfProject3"
         mc:Ignorable="d"
         Background="AliceBlue"
-        Height="500" Width="900">
+        Height="530" Width="930">
+
+    <Window.Resources>
+        <Style x:Key="AvailabilityTextStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="LimeGreen"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding AvailablePlaces}" Value="0">
+                    <Setter Property="Foreground" Value="Red"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
 
     <Grid>
-        <Grid x:Name="Grid1" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="500" Width="900" Visibility="Visible">
-            <Rectangle HorizontalAlignment="Center" Height="100" Margin="0,27,0,0" VerticalAlignment="Top" Width="698" RadiusY="50" RadiusX="50" >
+        <Grid x:Name="Grid1" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="500" Width="900" Visibility="Visible" Background="#FFFEFAE0">
+            <Rectangle HorizontalAlignment="Left" Height="100" Margin="90,25,0,0" VerticalAlignment="Top" Width="698" RadiusY="50" RadiusX="50" >
                 <Rectangle.Fill>
-                    <SolidColorBrush Color="#FFA0E8AF" Opacity="0.4"/>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.4"/>
                 </Rectangle.Fill>
             </Rectangle>
-            <Label x:Name="LblKeuze" Content="Wie ben jij?" HorizontalAlignment="Center" Margin="0,39,0,0" VerticalAlignment="Top" Height="76" Width="288" FontSize="48" FontFamily="Bookman Old Style"/>
-            <Button x:Name="BtnStudent" Content="STUDENT" HorizontalAlignment="Left" Margin="101,168,0,0" VerticalAlignment="Top" Height="205" Width="205" FontSize="36" BorderBrush="{x:Null}" FontFamily="Bookman Old Style" Click="BtnStudent_Click">
+            <Label x:Name="LblKeuze" Content="Wie ben jij?" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Height="76" Width="288" FontSize="48" FontFamily="Georgia"/>
+            <Button x:Name="BtnStudent" Content="STUDENT" HorizontalAlignment="Left" Margin="100,168,0,0" VerticalAlignment="Top" Height="205" Width="205" FontSize="36" BorderBrush="{x:Null}" FontFamily="Georgia" Click="BtnStudent_Click" FontWeight="Bold">
                 <Button.Background>
-                    <SolidColorBrush Color="#FFA0E8AF" Opacity="0.4"/>
+                    <SolidColorBrush Color="#FFCCD5AE" Opacity="1"/>
                 </Button.Background>
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -27,9 +38,9 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="BtnCompany" Content="Bedrijf" HorizontalAlignment="Left" Margin="560,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="205" Width="205" FontSize="36" BorderBrush="{x:Null}" FontFamily="Bookman Old Style" Click="BtnCompany_Click">
+            <Button x:Name="BtnCompany" Content="BEDRIJF" HorizontalAlignment="Left" Margin="560,168,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="205" Width="205" FontSize="36" BorderBrush="{x:Null}" FontFamily="Georgia" Click="BtnCompany_Click" FontWeight="Bold" IsTabStop="False">
                 <Button.Background>
-                    <SolidColorBrush Color="#FFA0E8AF" Opacity="0.4"/>
+                    <SolidColorBrush Color="#FFCCD5AE" Opacity="1"/>
                 </Button.Background>
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -37,17 +48,17 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <hw:PlainImage hw:Icon.Default="{StaticResource bs_building}" Height="60" Width="60" Margin="630,308,210,132" hw:Icon.DefaultColor="#C6CCB2"/>
-            <hw:PlainImage hw:Icon.Default="{StaticResource bs_mortarboard_fill}" Height="60" Width="60" Margin="171,308,669,132" hw:Icon.DefaultColor="#C6CCB2" RenderTransformOrigin="0.387,0.587" />
+            <hw:PlainImage hw:Icon.Default="{StaticResource bs_building}" Height="60" Width="60" Margin="632,299,208,141" hw:Icon.DefaultColor="#000000"/>
+            <hw:PlainImage hw:Icon.Default="{StaticResource bs_mortarboard_fill}" Height="60" Width="60" Margin="172,299,668,141" hw:Icon.DefaultColor="#000000" RenderTransformOrigin="0.387,0.587" />
             <Label x:Name="LblSponsors" Content="Onze Sponsors" HorizontalAlignment="Left" Margin="101,378,0,0" VerticalAlignment="Top" Height="34" Width="136" FontFamily="Bookman Old Style"/>
-            <Image x:Name="imgSponsor1" HorizontalAlignment="Left" Height="40" Margin="127,412,0,0" VerticalAlignment="Top" Width="40"/>
-            <Image x:Name="imgSponsor2" HorizontalAlignment="Left" Height="40" Margin="201,412,0,0" VerticalAlignment="Top" Width="40" RenderTransformOrigin="0.735,0.54"/>
-            <Image x:Name="imgSponsor3" HorizontalAlignment="Left" Height="40" Margin="275,412,0,0" VerticalAlignment="Top" Width="40"/>
-            <Image x:Name="imgSponsor4" HorizontalAlignment="Left" Height="40" Margin="345,412,0,0" VerticalAlignment="Top" Width="40"/>
-            <Image x:Name="imgSponsor5" HorizontalAlignment="Left" Height="40" Margin="420,412,0,0" VerticalAlignment="Top" Width="40"/>
-            <Button x:Name="BtnStop" Content="Stoppen" HorizontalAlignment="Left" Margin="754,412,0,0" VerticalAlignment="Top" Height="28" Width="74" BorderBrush="{x:Null}" FontFamily="Bookman Old Style" Click="BtnStop_Click">
+            <Image x:Name="imgSponsor1" Source="/img/sponsors/sponsor1.png" HorizontalAlignment="Left" Height="40" Margin="127,412,0,0" VerticalAlignment="Top" Width="40"/>
+            <Image x:Name="imgSponsor2" Source="/img/sponsors/sponsor2.png" HorizontalAlignment="Left" Height="40" Margin="201,412,0,0" VerticalAlignment="Top" Width="40" RenderTransformOrigin="0.735,0.54"/>
+            <Image x:Name="imgSponsor3" Source="/img/sponsors/sponsor3.png" HorizontalAlignment="Left" Height="40" Margin="275,412,0,0" VerticalAlignment="Top" Width="40"/>
+            <Image x:Name="imgSponsor4" Source="/img/sponsors/sponsor4.png" HorizontalAlignment="Left" Height="40" Margin="345,412,0,0" VerticalAlignment="Top" Width="40"/>
+            <Image x:Name="imgSponsor5" Source="/img/sponsors/sponsor5.png" HorizontalAlignment="Left" Height="40" Margin="420,412,0,0" VerticalAlignment="Top" Width="40"/>
+            <Button x:Name="BtnStop" Content="Stoppen" HorizontalAlignment="Left" Margin="700,415,0,0" VerticalAlignment="Top" Height="30" Width="75" BorderBrush="{x:Null}" FontFamily="Georgia" Click="BtnStop_Click">
                 <Button.Background>
-                    <SolidColorBrush Color="#FFA0E8AF" Opacity="0.4"/>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.4"/>
                 </Button.Background>
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -57,17 +68,16 @@
             </Button>
         </Grid>
 
-        <Grid x:Name="Grid2" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="500" Width="900" Visibility="Hidden">
-            <Rectangle HorizontalAlignment="Center" Height="100" Margin="0,10,0,0" VerticalAlignment="Top" Width="698" RadiusY="50" RadiusX="50" >
+        <Grid x:Name="Grid2" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="500" Width="900" Visibility="Hidden" Background="#FFFEFAE0">
+            <Rectangle HorizontalAlignment="Left" Height="100" Margin="100,20,0,0" VerticalAlignment="Top" Width="698" RadiusY="50" RadiusX="50">
                 <Rectangle.Fill>
-                    <SolidColorBrush Color="#FFA0E8AF" Opacity="0.4"/>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.4"/>
                 </Rectangle.Fill>
             </Rectangle>
-            <Label x:Name="LblCursus" Content="Kies je cursus
-                   ?" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top" Height="76" Width="360" FontSize="48" FontFamily="Bookman Old Style"/>
-            <Button x:Name="BtnTerug" Content="Terug" HorizontalAlignment="Left" Margin="724,437,0,0" VerticalAlignment="Top" Width="75" Click="BtnTerug_Click" FontFamily="Bookman Old Style" Height="35" RenderTransformOrigin="0.152,0.93" FontSize="14" FontWeight="Bold" >
+            <Label x:Name="LblCursus" Content="Kies je cursus" HorizontalAlignment="Left" Margin="295,35,0,0" VerticalAlignment="Top" Height="76" Width="308" FontSize="48" FontFamily="Georgia"/>
+            <Button x:Name="BtnTerug" Content="Terug" HorizontalAlignment="Left" Margin="745,455,0,0" VerticalAlignment="Top" Width="75" Click="BtnTerug_Click" FontFamily="Georgia" Height="35" RenderTransformOrigin="0.152,0.93" FontSize="14" FontWeight="Bold" BorderBrush="{x:Null}">
                 <Button.Background>
-                    <SolidColorBrush Color="#FFA0E8AF" Opacity="0.4"/>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.4"/>
                 </Button.Background>
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -75,9 +85,9 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="BtnVerder" Content="Verder" HorizontalAlignment="Left" Margin="817,437,0,0" VerticalAlignment="Top" Width="60" Click="BtnVerder_Click" Height="35" FontFamily="Bookman Old Style" FontSize="14" FontWeight="Bold" >
+            <Button x:Name="BtnVerder" Content="Verder" HorizontalAlignment="Left" Margin="830,455,0,0" VerticalAlignment="Top" Width="65" Click="BtnVerder_Click" Height="35" FontFamily="Georgia" FontSize="14" FontWeight="Bold" BorderBrush="{x:Null}">
                 <Button.Background>
-                    <SolidColorBrush Color="#FFA0E8AF" Opacity="0.4"/>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.4"/>
                 </Button.Background>
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -85,81 +95,278 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Image x:Name="ImgCursus1" HorizontalAlignment="Left" Height="120" Margin="90,140,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.55,0.277" />
-            <Image x:Name="ImgCursus2" HorizontalAlignment="Left" Height="120" Margin="329,140,0,0" VerticalAlignment="Top" Width="120"/>
-            <Image x:Name="ImgCursus3" HorizontalAlignment="Left" Height="120" Margin="555,140,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.118,0.073"/>
-            <Image x:Name="ImgCursus4" HorizontalAlignment="Left" Height="120" Margin="90,297,0,0" VerticalAlignment="Top" Width="120"/>
-            <Image x:Name="ImgCursus5" HorizontalAlignment="Left" Height="120" Margin="330,297,0,0" VerticalAlignment="Top" Width="120"/>
-            <Image x:Name="ImgCursus6" HorizontalAlignment="Left" Height="120" Margin="555,297,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.355,0.532"/>
-            <RadioButton x:Name="RbnCursus1" Content="bandenmonteur" HorizontalAlignment="Left" Margin="90,270,0,0" VerticalAlignment="Top"/>
-            <RadioButton x:Name="RbnCursus2" Content="Boekhoudkundig Assistent" HorizontalAlignment="Left" Margin="330,270,0,0" VerticalAlignment="Top"/>
-            <RadioButton x:Name="RbnCursus3" Content="Brood- en banketbakker" HorizontalAlignment="Left" Margin="555,270,0,0" VerticalAlignment="Top"/>
-            <RadioButton x:Name="RbnCursus4" Content="Dakwerker" HorizontalAlignment="Left" Margin="90,430,0,0" VerticalAlignment="Top"/>
-            <RadioButton x:Name="RbnCursus5" Content="fietshersteller" HorizontalAlignment="Left" Margin="329,430,0,0" VerticalAlignment="Top"/>
-            <RadioButton x:Name="RbnCursus6" Content="Winkelverkoper" HorizontalAlignment="Left" Margin="555,430,0,0" VerticalAlignment="Top"/>
+            <Image x:Name="ImgCursus1" Source="/img/cursussen/bandenmonteur.png" HorizontalAlignment="Left" Height="120" Margin="100,140,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.55,0.277"/>
+            <Image x:Name="ImgCursus2" Source="/img/cursussen/Boekhoudkundig.png" HorizontalAlignment="Left" Height="120" Margin="400,140,0,0" VerticalAlignment="Top" Width="120"/>
+            <Image x:Name="ImgCursus3" Source="/img/cursussen/Brood-banketbakker.png" HorizontalAlignment="Left" Height="120" Margin="680,140,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.118,0.073"/>
+            <Image x:Name="ImgCursus4" Source="/img/cursussen/dakwerker.png" HorizontalAlignment="Left" Height="120" Margin="100,295,0,0" VerticalAlignment="Top" Width="120"/>
+            <Image x:Name="ImgCursus5" Source="/img/cursussen/fietshersteller.png" HorizontalAlignment="Left" Height="120" Margin="400,295,0,0" VerticalAlignment="Top" Width="120"/>
+            <Image x:Name="ImgCursus6" Source="/img/cursussen/winkelverkoper.png" HorizontalAlignment="Left" Height="120" Margin="680,295,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.355,0.532"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="101,270,0,0" VerticalAlignment="Top" DataContext="{Binding Courses[0]}">
+                <RadioButton x:Name="RbnCursus1" Content="Bandenmonteur" VerticalAlignment="Center" VerticalContentAlignment="Center" Checked="RadioButton_Checked" GroupName="CursusGroup" FontFamily="Georgia"/>
+                <TextBlock x:Name="TxtAvailability1" Text="{Binding AvailablePlaces}" VerticalAlignment="Center" Margin="10,0,0,0" Style="{StaticResource AvailabilityTextStyle}" FontWeight="ExtraBold" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="400,270,0,0" VerticalAlignment="Top" DataContext="{Binding Courses[1]}">
+                <RadioButton x:Name="RbnCursus2" Content="Boekhoudkundig Assistent" VerticalAlignment="Center" VerticalContentAlignment="Center" Checked="RadioButton_Checked" GroupName="CursusGroup" FontFamily="Georgia"/>
+                <TextBlock x:Name="TxtAvailability2" Text="{Binding AvailablePlaces}" VerticalAlignment="Center" Margin="10,0,0,0" Style="{StaticResource AvailabilityTextStyle}" FontWeight="ExtraBold" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="680,270,0,0" VerticalAlignment="Top" DataContext="{Binding Courses[2]}">
+                <RadioButton x:Name="RbnCursus3" Content="Brood- en banketbakker" VerticalAlignment="Center" VerticalContentAlignment="Center" Checked="RadioButton_Checked" GroupName="CursusGroup" FontFamily="Georgia"/>
+                <TextBlock x:Name="TxtAvailability3" Text="{Binding AvailablePlaces}" VerticalAlignment="Center" Margin="10,0,0,0" Style="{StaticResource AvailabilityTextStyle}" FontWeight="ExtraBold" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="101,430,0,0" VerticalAlignment="Top" DataContext="{Binding Courses[3]}">
+                <RadioButton x:Name="RbnCursus4" Content="Dakwerker" VerticalAlignment="Center" VerticalContentAlignment="Center" Checked="RadioButton_Checked" GroupName="CursusGroup" FontFamily="Georgia"/>
+                <TextBlock x:Name="TxtAvailability4" Text="{Binding AvailablePlaces}" VerticalAlignment="Center" Margin="10,0,0,0" Style="{StaticResource AvailabilityTextStyle}" FontWeight="ExtraBold" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="400,430,0,0" VerticalAlignment="Top" DataContext="{Binding Courses[4]}">
+                <RadioButton x:Name="RbnCursus5" Content="Fietshersteller" VerticalAlignment="Center" VerticalContentAlignment="Center" Checked="RadioButton_Checked" GroupName="CursusGroup" FontFamily="Georgia"/>
+                <TextBlock x:Name="TxtAvailability5" Text="{Binding AvailablePlaces}" VerticalAlignment="Center" Margin="10,0,0,0" Style="{StaticResource AvailabilityTextStyle}" FontWeight="ExtraBold" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="680,430,0,0" VerticalAlignment="Top" DataContext="{Binding Courses[5]}">
+                <RadioButton x:Name="RbnCursus6" Content="Winkelverkoper" Checked="RadioButton_Checked" VerticalContentAlignment="Center" VerticalAlignment="Center" GroupName="CursusGroup" FontFamily="Georgia"/>
+                <TextBlock x:Name="TxtAvailability6" Text="{Binding AvailablePlaces}" VerticalAlignment="Center" Margin="10,0,0,0" Style="{StaticResource AvailabilityTextStyle}" FontWeight="ExtraBold" FontSize="16"/>
+            </StackPanel>
+           
         </Grid>
 
-        <Grid x:Name="Grid3" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="800" Visibility="Collapsed">
-            <Rectangle HorizontalAlignment="Center" Height="50" Fill="#330036" VerticalAlignment="Top" Width="800" Grid.Column="1"/>
-            <Label HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Content="Vul onderstaand formulier in" Foreground="#C6CCB2" FontFamily="Arial" FontSize="28" Grid.Column="1"></Label>
-            <Rectangle HorizontalAlignment="Left" Height="385" Margin="0,50,0,0"  Fill="#093824" VerticalAlignment="Top" Width="800" Grid.ColumnSpan="2"/>
-            <Label x:Name="LblNaam" Content="Naam *" HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
-            <TextBox x:Name="TxtVoornaam" HorizontalAlignment="Left" Margin="50,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
-            <TextBox x:Name="TxtAchternaam" HorizontalAlignment="Left" Margin="300,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300"/>
-            <Label x:Name="LblVoornaam" Content="Voornaam" HorizontalAlignment="Left" Margin="50,115,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
-            <Label x:Name="LblAchternaam" Content="Achternaam" HorizontalAlignment="Left" Margin="300,115,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
-            <Label x:Name="LblAdres" Content="Adres *" HorizontalAlignment="Left" Margin="50,140,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
-            <TextBox x:Name="TxtStraat" HorizontalAlignment="Left" Margin="50,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
-            <Label x:Name="LblStraat" Content="Straat" HorizontalAlignment="Left" Margin="50,185,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
-            <TextBox x:Name="TxtHuisnr" HorizontalAlignment="Left" Margin="520,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80"/>
-            <TextBox x:Name="TxtToevoeging" HorizontalAlignment="Left" Margin="650,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80"/>
-            <Label x:Name="LblHuisnr" Content="Huinr" HorizontalAlignment="Left" Margin="520,185,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
-            <Label x:Name="LblToevoeging" Content="Toevoeging" HorizontalAlignment="Left" Margin="650,185,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
-            <Label x:Name="LblPostcode" Content="Postcode *" HorizontalAlignment="Left" Margin="50,210,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
-            <TextBox x:Name="TxtPostcode" HorizontalAlignment="Left" Margin="50,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
-            <Label x:Name="LblPlaats" Content="Woonplaats *" HorizontalAlignment="Left" Margin="210,210,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
-            <TextBox x:Name="TxtPlaats" HorizontalAlignment="Left" Margin="210,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300"/>
-            <Label x:Name="LblGsm" Content="Gsm *" HorizontalAlignment="Left" Margin="50,255,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
-            <TextBox x:Name="TxtGsm" HorizontalAlignment="Left" Margin="50,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
-            <Label x:Name="LblEmail" Content="Email *" HorizontalAlignment="Left" Margin="50,300,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
-            <TextBox x:Name="TxtEmail" HorizontalAlignment="Left" Margin="50,325,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
-            <Label x:Name="LblRijks" Content="Rijksregisternummer *" HorizontalAlignment="Left" Margin="50,345,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
-            <TextBox x:Name="TxtRijks" HorizontalAlignment="Left" Margin="50,370,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
-            <Button x:Name="BtnSubmit1" Content="Verzenden" HorizontalAlignment="Left" Margin="475,400,0,0" VerticalAlignment="Top" Width="100" Click="BtnSubmit1_Click"/>
-            <Button x:Name="BtnClear1" Content="Wissen" HorizontalAlignment="Left" Margin="600,400,0,0" VerticalAlignment="Top" Width="100" Click="BtnClear1_Click"/>
-            <Button x:Name="BtnTerug1" Content="Terug" HorizontalAlignment="Left" Margin="725,400,0,0" VerticalAlignment="Top" Width="50" Click="BtnTerug1_Click" />
 
-        </Grid>
-        <Grid x:Name="Grid4" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Width="800" Visibility="Hidden">
-            <Rectangle HorizontalAlignment="Center" Height="50" Fill="#330036" VerticalAlignment="Top" Width="800" Grid.Column="1"/>
-            <Label HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Content="Vul uw bedrijfsgegevens in" Foreground="#C6CCB2" FontFamily="Arial" FontSize="28" Grid.Column="1"></Label>
-            <Rectangle HorizontalAlignment="Left" Height="385" Margin="0,50,0,0"  Fill="#BF4E30" VerticalAlignment="Top" Width="800" Grid.ColumnSpan="2"/>
-            <Label x:Name="LblBedrijfsNaam" Content="Bedrijfsnaam *" HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
-            <TextBox x:Name="TxtBedrijfsNaam" HorizontalAlignment="Left" Margin="50,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
-            <Label x:Name="LblRechtsVorm" Content="Rechtsvorm *" HorizontalAlignment="Left" Margin="550,70,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
-            <TextBox x:Name="TxtRechtsVorm" HorizontalAlignment="Left" Margin="550,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
-            <Label x:Name="LblBedrijfAdres" Content="Adres *" HorizontalAlignment="Left" Margin="50,140,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
-            <TextBox x:Name="TxtBedrijfStraat" HorizontalAlignment="Left" Margin="50,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
-            <Label x:Name="LblBedrijfStraat" Content="Straat" HorizontalAlignment="Left" Margin="50,185,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
-            <TextBox x:Name="TxtBedrijfHuisnr" HorizontalAlignment="Left" Margin="520,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80"/>
-            <TextBox x:Name="TxtBedrijfToevoeging" HorizontalAlignment="Left" Margin="650,170,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80"/>
-            <Label x:Name="LblBedrijfHuisnr" Content="Huinr" HorizontalAlignment="Left" Margin="520,185,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
-            <Label x:Name="LblBedrijfToevoeging" Content="Toevoeging" HorizontalAlignment="Left" Margin="650,185,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="12" />
-            <Label x:Name="LblBedrijfPostcode" Content="Postcode *" HorizontalAlignment="Left" Margin="50,210,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
-            <TextBox x:Name="TxtBedrijfPostcode" HorizontalAlignment="Left" Margin="50,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
-            <Label x:Name="LblBedrijfPlaats" Content="Plaats *" HorizontalAlignment="Left" Margin="210,210,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
-            <TextBox x:Name="TxtBedrijfPlaats" HorizontalAlignment="Left" Margin="210,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300"/>
-            <Label x:Name="LblTelefoon" Content="Gsm *" HorizontalAlignment="Left" Margin="50,255,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
-            <TextBox x:Name="TxtTelefoon" HorizontalAlignment="Left" Margin="50,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
-            <Label x:Name="LblBedrijfEmail" Content="Email *" HorizontalAlignment="Left" Margin="50,300,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
-            <TextBox x:Name="TxtBedrijfEmail" HorizontalAlignment="Left" Margin="50,325,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
-            <Label x:Name="LblKBO" Content="KBO-nummer *" HorizontalAlignment="Left" Margin="550,255,0,0" VerticalAlignment="Top" Foreground="#C6CCB2" FontFamily="Arial" FontSize="16" FontWeight="DemiBold"/>
-            <TextBox x:Name="TxtKBO" HorizontalAlignment="Left" Margin="550,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
-            <Button x:Name="BtnSubmit2" Content="Verzenden" HorizontalAlignment="Left" Margin="475,400,0,0" VerticalAlignment="Top" Width="100" Click="BtnSubmit2_Click"/>
-            <Button x:Name="BtnClear2" Content="Wissen" HorizontalAlignment="Left" Margin="600,400,0,0" VerticalAlignment="Top" Width="100" Click="BtnClear2_Click"/>
-            <Button x:Name="BtnTerug2" Content="Terug" HorizontalAlignment="Left" Margin="725,400,0,0" VerticalAlignment="Top" Width="50" Click="BtnTerug2_Click" />
+        <Grid x:Name="Grid3" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="500" Width="900" Visibility="Hidden" Background="#FFFEFAE0">
+            <Rectangle HorizontalAlignment="Center" Height="99" VerticalAlignment="Top" Width="785" RadiusY="50" RadiusX="50" Margin="0,10,0,0">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.4"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Content="Vul uw gegevens in" Foreground="#FF36392D" FontFamily="Georgia" FontSize="48"/>
+            <Rectangle HorizontalAlignment="Center" Height="365" Margin="0,120,0,0" VerticalAlignment="Top" Width="785" RadiusY="50" RadiusX="50">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="#FFCCD5AE" Opacity="1"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Content="" Foreground="#C6CCB2" FontFamily="Arial" FontSize="28" Grid.Column="1"></Label>
+            <Label x:Name="LblNaam" Content="Naam *" HorizontalAlignment="Left" Margin="80,140,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="16" FontWeight="DemiBold" RenderTransformOrigin="0.498,1.304"/>
+            <TextBox x:Name="TxtVoornaam" HorizontalAlignment="Left" Margin="80,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.62,2.731"/>
+            <TextBox x:Name="TxtAchternaam" HorizontalAlignment="Left" Margin="295,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300"/>
+            <Label x:Name="LblVoornaam" Content="Voornaam" HorizontalAlignment="Left" Margin="82,195,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="12" />
+            <Label x:Name="LblAchternaam" Content="Achternaam" HorizontalAlignment="Left" Margin="295,195,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="12" />
+            <Label x:Name="LblAdres" Content="Adres *" HorizontalAlignment="Left" Margin="80,215,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="TxtStraat" HorizontalAlignment="Left" Margin="80,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
+            <Label x:Name="LblStraat" Content="Straat" HorizontalAlignment="Left" Margin="80,270,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="12" />
+            <TextBox x:Name="TxtHuisnr" HorizontalAlignment="Left" Margin="515,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80" FontSize="12"/>
+            <TextBox x:Name="TxtToevoeging" HorizontalAlignment="Left" Margin="645,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="80" FontSize="12"/>
+            <Label x:Name="LblHuisnr" Content="Huisnr" HorizontalAlignment="Left" Margin="520,270,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="12" />
+            <Label x:Name="LblToevoeging" Content="Toevoeging" HorizontalAlignment="Left" Margin="650,270,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="12" />
+            <Label x:Name="LblPostcode" Content="Postcode *" HorizontalAlignment="Left" Margin="75,285,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="16" FontWeight="Bold"/>
+            <TextBox x:Name="TxtPostcode" HorizontalAlignment="Left" Margin="80,320,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
+            <Label x:Name="LblPlaats" Content="Woonplaats *" HorizontalAlignment="Left" Margin="210,290,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="TxtPlaats" HorizontalAlignment="Left" Margin="210,320,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300"/>
+            <Label x:Name="LblGsm" Content="Gsm *" HorizontalAlignment="Left" Margin="75,340,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="16" RenderTransformOrigin="0.489,1.357" FontWeight="Bold">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <TextBox x:Name="TxtGsm" HorizontalAlignment="Left" Margin="80,370,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="262" Height="18"/>
+            <Label x:Name="LblEmail" Content="Email *" HorizontalAlignment="Center" Margin="0,340,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="16" FontWeight="Bold"/>
+            <TextBox x:Name="TxtEmail" HorizontalAlignment="Left" Margin="420,370,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400"/>
+            <Label x:Name="LblRijks" Content="Rijksregisternummer *" HorizontalAlignment="Left" Margin="75,396,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="16" FontWeight="Bold"/>
+            <TextBox x:Name="TxtRijks" HorizontalAlignment="Left" Margin="80,429,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="330" Height="18"/>
+            <Button x:Name="BtnSubmit1" Content="Verzenden" HorizontalAlignment="Left" Margin="710,450,0,0" VerticalAlignment="Top" Width="90" Click="BtnSubmit1_Click" Height="25" BorderBrush="{x:Null}" FontFamily="Georgia" FontWeight="Bold">
+                <Button.Background>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.75"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="BtnClear1" Content="Wissen" HorizontalAlignment="Left" Margin="625,450,0,0" VerticalAlignment="Top" Width="65" Click="BtnClear1_Click" Height="25" BorderBrush="{x:Null}" FontFamily="Georgia" FontWeight="Bold">
+                <Button.Background>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.75"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="BtnTerug1" Content="Terug" HorizontalAlignment="Left" Margin="520,450,0,0" VerticalAlignment="Top" Width="80" Click="BtnTerug1_Click" Height="25" BorderBrush="{x:Null}" FontFamily="Georgia" FontWeight="Bold">
+                <Button.Background>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.75"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <TextBlock x:Name="LblRijksRegisterNummer" HorizontalAlignment="Left" Margin="85,455,0,0" TextWrapping="Wrap" Text="Zonder speciale tekens" VerticalAlignment="Top" FontFamily="Georgia"/>
         </Grid>
 
+        <Grid x:Name="Grid4" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="500" Width="900" Visibility="Hidden" Background="#FFFEFAE0">
+            <Rectangle HorizontalAlignment="Center" Height="90" VerticalAlignment="Top" Width="785" RadiusY="50" RadiusX="50" Margin="0,20,0,0">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.4"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label x:Name="LblCursussen" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Content="Kies een cursus" Foreground="#FF36392D" FontFamily="Georgia" FontSize="48"/>
+            <Rectangle HorizontalAlignment="Center" Height="90" Margin="0,125,0,0" VerticalAlignment="Top" Width="785" RadiusY="50" RadiusX="50">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="#FFCCD5AE" Opacity="1"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Rectangle HorizontalAlignment="Center" Height="255" Margin="0,230,0,0" VerticalAlignment="Top" Width="785" RadiusY="50" RadiusX="50">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="#FFCCD5AE" Opacity="1"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label x:Name="LblNaamCursus" Content="Naam Cursus *" HorizontalAlignment="Left" Margin="106,270,0,0" VerticalAlignment="Top" Width="152" FontFamily="Georgia" Foreground="#FF36392D" FontSize="16" FontWeight="Bold"/>
+            <TextBox x:Name="TxtCursusNaam" HorizontalAlignment="Left" Margin="105,300,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Height="21" FontFamily="Georgia"/>
+            <Label x:Name="LblNiveau" Content="Opleidingsniveau *" HorizontalAlignment="Left" Margin="555,270,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="16" FontWeight="Bold" Foreground="#FF36392D"/>
+            <ComboBox x:Name="CbxNiveau" HorizontalAlignment="Left" Margin="555,300,0,0" VerticalAlignment="Top" Width="165" Height="21" SelectedIndex="0">
+                <ComboBoxItem Content="Graduaat"/>
+                <ComboBoxItem Content="Bachelor"/>
+                <ComboBoxItem Content="Master"/>
+                <ComboBoxItem Content="Doctor"/>
+            </ComboBox>
+            <Label x:Name="LblAdresCursus" Content="Locatie *" HorizontalAlignment="Left" Margin="105,335,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.118,0.193" FontSize="16" FontFamily="Georgia" Foreground="#FF36392D" FontWeight="Bold"/>
+            <Label x:Name="LblBeschikbarePlaatsen" Content="Beschikbare plaatsen *" HorizontalAlignment="Left" Margin="555,335,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="16" Foreground="#FF36392D" FontWeight="Bold"/>
+            <TextBox x:Name="TxtCursusBeschikbaar" HorizontalAlignment="Left" Margin="555,370,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" Height="18"/>
+            <Label x:Name="LblBeginDatum" Content="Begindatum cursus *" HorizontalAlignment="Left" Margin="155,400,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="16" Foreground="#FF36392D" FontWeight="Bold"/>
+            <Label x:Name="LblEindDatum" Content="Einddatum cursus *" HorizontalAlignment="Left" Margin="365,400,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="16" Foreground="#FF36392D" FontWeight="Bold"/>
+            <DatePicker x:Name="TxtCursusStart" HorizontalAlignment="Left" Margin="155,430,0,0" VerticalAlignment="Top" RenderTransformOrigin="4.565,0.127" FontFamily="Georgia"/>
+            <DatePicker x:Name="TxtCursusEind" HorizontalAlignment="Left" Margin="365,430,0,0" VerticalAlignment="Top" FontFamily="Georgia"/>
+            <Button x:Name="BtnTerug2" Content="Terug" HorizontalAlignment="Left" Margin="580,450,0,0" VerticalAlignment="Top" Height="25" Width="70" FontFamily="Georgia" BorderBrush="{x:Null}" FontWeight="Bold" Click="BtnTerug2_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.75"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="BtnClear2" Content="Wissen" HorizontalAlignment="Left" Margin="660,450,0,0" VerticalAlignment="Top" Height="25" Width="60" BorderBrush="{x:Null}" FontFamily="Georgia" FontWeight="Bold" Click="BtnClear2_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.75"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="BtnSubmit2" Content="Verzenden" HorizontalAlignment="Left" Margin="730,450,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" FontFamily="Georgia" Height="25" Width="80" FontWeight="Bold" Click="BtnSubmit2_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.75"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <ComboBox x:Name="CbxLocatie" HorizontalAlignment="Left" Margin="106,367,0,0" VerticalAlignment="Top" Width="230" Height="20" SelectedIndex="0">
+                <ComboBoxItem Content="Campus Aalst"/>
+                <ComboBoxItem Content="Campus Brussel"/>
+                <ComboBoxItem Content="Campus Dilbeek"/>
+                <ComboBoxItem Content="Campus Gent"/>
+                <ComboBoxItem Content="Campus Schaarbeek"/>
+                <ComboBoxItem Content="Campus Sint-Niklaas"/>
+            </ComboBox>
+                <RadioButton x:Name="RbnCursus1B" Content="Bandenmonteur" HorizontalAlignment="Left" Margin="155,145,0,0" VerticalAlignment="Top" FontFamily="Georgia" GroupName="CursusGroupB1" Checked="RadioButtonB1_Checked" IsChecked="False"/>
+                <RadioButton x:Name="RbnCursus2B" Content="Boekhoudkundig Assisent" HorizontalAlignment="Left" Margin="365,145,0,0" VerticalAlignment="Top" FontFamily="Georgia" GroupName="CursusGroupB1" Checked="RadioButtonB1_Checked"/>
+                <RadioButton x:Name="RbnCursus3B" Content="Brood- en banketbakker" HorizontalAlignment="Left" Margin="555,145,0,0" VerticalAlignment="Top" FontFamily="Georgia" GroupName="CursusGroupB1" Checked="RadioButtonB1_Checked"/>
+                <RadioButton x:Name="RbnCursus4B" Content="Dakwerker" HorizontalAlignment="Left" Margin="155,175,0,0" VerticalAlignment="Top" FontFamily="Georgia" GroupName="CursusGroupB1" Checked="RadioButtonB1_Checked"/>
+                <RadioButton x:Name="RbnCursus5B" Content="Fietshersteller" HorizontalAlignment="Left" Margin="365,175,0,0" VerticalAlignment="Top" FontFamily="Georgia" GroupName="CursusGroupB1" Checked="RadioButtonB1_Checked"/>
+                <RadioButton x:Name="RbnCursus6B" Content="Winkelverkoper" HorizontalAlignment="Left" Margin="555,175,0,0" VerticalAlignment="Top" FontFamily="Georgia" GroupName="CursusGroupB1" Checked="RadioButtonB1_Checked"/>
+                <RadioButton x:Name="RbnCursus7B" Content="Maak een nieuwe cursus" HorizontalAlignment="Left" VerticalContentAlignment="Center" VerticalAlignment="Center" FontFamily="Georgia" FontSize="20" Width="315" FontWeight="Bold" Margin="300,10,0,0" GroupName="CursusGroupB1" Checked="RadioButtonNieuweCursus_Checked"/>
+        </Grid>
+
+        <Grid x:Name="Grid5" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Height="500" Width="900" Visibility="Hidden" Background="#FFFEFAE0">
+            <Rectangle HorizontalAlignment="Center" Height="99" VerticalAlignment="Top" Width="786" RadiusY="50" RadiusX="50" Margin="0,10,0,0">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.4"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top" Content="Vul uw bedrijfsgegevens in" Foreground="#FF36392D" FontFamily="Georgia" FontSize="48"/>
+            <Rectangle HorizontalAlignment="Center" Height="367" Margin="0,122,0,0" VerticalAlignment="Top" Width="786" RadiusY="50" RadiusX="50">
+                <Rectangle.Fill>
+                    <SolidColorBrush Color="#FFCCD5AE" Opacity="1"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            <Label x:Name="LblBedrijfsNaam" Content="Bedrijfsnaam *" HorizontalAlignment="Left" Margin="85,145,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="TxtBedrijfsNaam" HorizontalAlignment="Left" Margin="80,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400" FontFamily="Georgia"/>
+            <Label x:Name="LblRechtsVorm" Content="Rechtsvorm *" HorizontalAlignment="Left" Margin="540,138,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="TxtRechtsVorm" HorizontalAlignment="Left" Margin="540,175,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" FontFamily="Georgia"/>
+            <Label x:Name="LblBedrijfAdres" Content="Adres *" HorizontalAlignment="Left" Margin="85,210,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="TxtBedrijfStraat" HorizontalAlignment="Left" Margin="80,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="400" FontSize="12"/>
+            <Label x:Name="LblBedrijfStraat" Content="Straat" HorizontalAlignment="Left" Margin="85,260,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="12" >
+                <Label.Foreground>
+                    <SolidColorBrush Color="#FF080808" Opacity="0.5"/>
+                </Label.Foreground>
+            </Label>
+            <TextBox x:Name="TxtBedrijfHuisnr" HorizontalAlignment="Left" Margin="540,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="70" FontFamily="Georgia" FontSize="12"/>
+            <TextBox x:Name="TxtBedrijfToevoeging" HorizontalAlignment="Left" Margin="650,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="70" FontFamily="Georgia" FontSize="12"/>
+            <Label x:Name="LblBedrijfHuisnr" Content="Huisnr" HorizontalAlignment="Left" Margin="540,260,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="12" >
+                <Label.Foreground>
+                    <SolidColorBrush Color="#FF020202" Opacity="0.5"/>
+                </Label.Foreground>
+            </Label>
+            <Label x:Name="LblBedrijfToevoeging" Content="Toevoeging" HorizontalAlignment="Left" Margin="650,260,0,0" VerticalAlignment="Top" FontFamily="Georgia" FontSize="12" >
+                <Label.Foreground>
+                    <SolidColorBrush Color="Black" Opacity="0.5"/>
+                </Label.Foreground>
+            </Label>
+            <Label x:Name="LblBedrijfPostcode" Content="Postcode *" HorizontalAlignment="Left" Margin="80,297,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="TxtBedrijfPostcode" HorizontalAlignment="Left" Margin="80,332,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" FontFamily="Georgia" FontSize="12"/>
+            <Label x:Name="LblBedrijfPlaats" Content="Plaats *" HorizontalAlignment="Left" Margin="210,297,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="TxtBedrijfPlaats" HorizontalAlignment="Left" Margin="210,332,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="270"/>
+            <Label x:Name="LblTelefoon" Content="Gsm *" HorizontalAlignment="Left" Margin="83,350,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="16" FontWeight="DemiBold" RenderTransformOrigin="0.613,2.48"/>
+            <TextBox x:Name="TxtTelefoon" HorizontalAlignment="Left" Margin="80,385,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="293" Height="18"/>
+            <Label x:Name="LblBedrijfEmail" Content="Email *" HorizontalAlignment="Left" Margin="83,406,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="TxtBedrijfEmail" HorizontalAlignment="Left" Margin="80,439,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="400" FontFamily="Georgia" FontSize="12"/>
+            <Label x:Name="LblKBO" Content="KBO-nummer *" HorizontalAlignment="Left" Margin="545,350,0,0" VerticalAlignment="Top" Foreground="#FF36392D" FontFamily="Georgia" FontSize="16" FontWeight="DemiBold"/>
+            <TextBox x:Name="TxtKBO" HorizontalAlignment="Left" Margin="541,385,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+            <Button x:Name="BtnSubmit3" Content="Verzenden" HorizontalAlignment="Left" Margin="705,447,0,0" VerticalAlignment="Top" Width="102" Click="BtnSubmit3_Click" FontFamily="Georgia" Height="31" FontWeight="Bold" RenderTransformOrigin="0.213,0.921" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.75"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="BtnClear3" Content="Wissen" HorizontalAlignment="Left" Margin="616,447,0,0" VerticalAlignment="Top" Width="84" Click="BtnClear3_Click" Height="30" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" FontFamily="Georgia" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.75"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="BtnTerug3" Content="Terug" HorizontalAlignment="Left" Margin="521,447,0,0" VerticalAlignment="Top" Width="86" Click="BtnTerug3_Click" FontFamily="Georgia" Height="31" FontWeight="Bold" BorderBrush="{x:Null}" >
+                <Button.Background>
+                    <SolidColorBrush Color="#FFD4A373" Opacity="0.75"/>
+                </Button.Background>
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
     </Grid>
 
 </Window>

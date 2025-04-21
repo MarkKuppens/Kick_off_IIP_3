@@ -9,6 +9,56 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="img\cursussen\bandenmonteur.png" />
+    <None Remove="img\cursussen\Boekhoudkundig.png" />
+    <None Remove="img\cursussen\Brood-banketbakker.png" />
+    <None Remove="img\cursussen\dakwerker.png" />
+    <None Remove="img\cursussen\fietshersteller.png" />
+    <None Remove="img\cursussen\winkelverkoper.png" />
+    <None Remove="img\sponsors\sponsor1.png" />
+    <None Remove="img\sponsors\sponsor2.png" />
+    <None Remove="img\sponsors\sponsor3.png" />
+    <None Remove="img\sponsors\sponsor4.png" />
+    <None Remove="img\sponsors\sponsor5.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="img\cursussen\bandenmonteur.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\cursussen\Boekhoudkundig.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\cursussen\Brood-banketbakker.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\cursussen\dakwerker.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\cursussen\fietshersteller.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\cursussen\winkelverkoper.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\sponsors\sponsor1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\sponsors\sponsor2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\sponsors\sponsor3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\sponsors\sponsor4.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\sponsors\sponsor5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Haley.WPF" Version="5.5.1" />
     <PackageReference Include="Haley.WPF.IconsPack" Version="1.0.10" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />

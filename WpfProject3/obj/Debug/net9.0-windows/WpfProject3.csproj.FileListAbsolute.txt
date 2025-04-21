@@ -119,3 +119,87 @@ C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug
 C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\ref\WpfProject3.dll
 >>>>>>> Stashed changes
 C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\Newtonsoft.Json.dll
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\img\cursussen\bandenmonteur.png
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\img\cursussen\Boekhoudkundig.png
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\img\cursussen\Brood-banketbakker.png
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3_Content.g.cs
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\img\cursussen\dakwerker.png
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\img\cursussen\fietshersteller.png
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\img\sponsors\sponsor1.png
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\img\sponsors\sponsor2.png
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\img\sponsors\sponsor3.png
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\img\sponsors\sponsor4.png
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\img\sponsors\sponsor5.png
+C:\Users\markk\Documents\Odisee\Kickoff IIP\Kick_off_IIP_3\WpfProject3\bin\Debug\net9.0-windows\img\cursussen\winkelverkoper.png
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\WpfProject3.exe
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\img\cursussen\bandenmonteur.png
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\img\cursussen\Boekhoudkundig.png
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\img\cursussen\Brood-banketbakker.png
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\img\cursussen\dakwerker.png
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\img\cursussen\fietshersteller.png
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\img\cursussen\winkelverkoper.png
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\img\sponsors\sponsor1.png
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\img\sponsors\sponsor2.png
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\img\sponsors\sponsor3.png
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\img\sponsors\sponsor4.png
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\img\sponsors\sponsor5.png
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\WpfProject3.deps.json
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\WpfProject3.runtimeconfig.json
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\WpfProject3.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\WpfProject3.pdb
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Haley.Abstractions.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Haley.Extensions.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Haley.Helpers.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Haley.IOC.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Haley.MVVM.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Haley.WPF.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Haley.WPF.IconsPack.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Identity.Client.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Win32.SystemEvents.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\Newtonsoft.Json.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\System.CodeDom.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\System.Drawing.Common.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\System.Private.Windows.Core.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\System.Management.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\System.Security.Cryptography.Xml.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\System.Text.Json.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Management.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.csproj.AssemblyReference.cache
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3_Content.g.cs
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3_MarkupCompile.cache
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3_MarkupCompile.lref
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\App.baml
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.g.resources
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.AssemblyInfoInputs.cache
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.AssemblyInfo.cs
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.csproj.CoreCompileInputs.cache
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\WpfProje.5F104BE2.Up2Date
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\refint\WpfProject3.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.pdb
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\WpfProject3.genruntimeconfig.cache
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\obj\Debug\net9.0-windows\ref\WpfProject3.dll
+C:\Users\somer\Downloads\WpfProject3.10.04_3\WpfProject3\bin\Debug\net9.0-windows\img\cursussen\andere.png
